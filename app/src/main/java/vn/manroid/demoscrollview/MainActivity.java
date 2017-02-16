@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements ViewTreeObserver.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this,"Github",Toast.LENGTH_LONG).show();
         scrollView = (ScrollView)findViewById(R.id.scroll_view);
         scrollView.getViewTreeObserver().addOnScrollChangedListener(this);
 
